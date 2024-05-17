@@ -1,0 +1,9 @@
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
+.arrow-btn {
+    margin: 10px;
+}

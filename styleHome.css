@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+ }
+ 
+ html {
+  scroll-padding-top: 6rem;
+}
+
+img {
+  height: 70vh;
+  width: 70vh;
+  float: right;
+
+}
+
+button {
+  background-color: rgb(202, 129, 129);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background-color: rgb(202, 129, 129);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+ 
+ .banner {
+   height: 100vh;
+   background: url("Images/pexels-artempodrez-7048016.jpg") no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+
+ .about {
+   padding: 40px 0;
+ }
+
+ .about .title{
+   font-size: 35px;
+   font-weight: 700;
+ }
+
+ .about p{
+   padding-top: 20px;
+   text-align: justify;
+ }
+
+ .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 25px;
+}
+
+.sec-2 {
+  background-color: rgb(183, 207, 146);
+
+}
+
+.sec-4{
+  background-color: #759a86  ;
+}
+
+.sec-3{
+  background-color: rgb(109, 160, 138);
+}
+
+.footerHome{
+  align-items: center;
+  background-color: rgb(132, 163, 134);
+  justify-content: center;
+  display: flex;
+  min-height: 20vh;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+
+}
+
+section {
+  display: flex;
+    justify-content:center;
+  align-items:center;
+  min-height: 90vh;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+ 
+h1.bannerText {
+  position: relative;
+  font-size: 100px;
+  color: rgb(20, 73, 92);
+  animation-name: bannerTransition;
+  transition: 2s;
+}
+
+h3.bannerText {
+  position: relative;
+  font-size: 60px;
+  color: rgb(20, 73, 92);
+  animation-name: bannerTransition;
+  transition: 2s; 
+}
+
+@keyframes bannerTransition {
+  from {
+    transform: translateX(-100%);
+    
+  }
+  to {
+    transform: translateX(0);
+    
+  }
+}
+
+
+.single-service{
+  flex-basis: 48%;
+  justify-content: space-between;
+  text-align: center ;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.single-service img{
+  width: 25%;
+  margin: 50px;
+  height: 25%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.single-service img:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),#009688);
+  
+}
+
+
+
+@media all and (max-width: 1024px) {
+  h1.bannerText{
+    font-size: 30px;
+}
+h3.bannerText{
+  font-size: 30px;
+}
+}
+@media all and (max-width: 767px) {
+  h1.bannerText{
+    font-size: 30px;
+}
+h3.bannerText{
+  font-size: 30px;
+}
+}
+

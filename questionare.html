@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriptions" content="">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="questionareStyle.css">
+    <link rel="stylesheet" href="navigationsyle.css">
+    <title> Quiz </title>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="Home.html"> Webmasters TSA </a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     </i>
+                </div> 
+
+
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </i>
+            </div>
+
+        </div>
+    </nav>
+
+<section class="banner2" id="banner2">
+<h1 class="bannerText"> Green Energy <br> Questionare</h1>
+
+</section>
+
+
+
+
+<section class="questionarre">
+<div class="container">
+
+
+<div id="question1" class="question active">
+    <p class="q">1. Choose your location and climate:</p> <br>
+    <label><input type="radio" name="locationClimate" value="urban"> Urban area </label><br><br>
+    <label><input type="radio" name="locationClimate" value="suburban"> Suburban area </label><br><br>
+    <label><input type="radio" name="locationClimate" value="rural"> Rural area </label> <br><br>
+    <button onclick="nextQuestion('question1', 'question2')">Next</button>
+</div>
+
+<div id="question2" class="question">
+    <p class="q">2. Select your Monthly energy consumption level:</p> <br>
+    <label><input type="radio" name="energyConsumption" value="low"> Low (less than 500 kWh)</label><br><br>
+    <label><input type="radio" name="energyConsumption" value="moderate"> Moderate (500-1000 kWh)</label><br><br>
+    <label><input type="radio" name="energyConsumption" value="high"> High (more than 1000 kWh)</label> <br><br>
+    <button onclick="nextQuestion('question2', 'question3')">Next</button>
+</div>
+
+<div id="question3" class="question">
+    <p class="q">3. What is your budget range?</p> <br>
+    <label><input type="radio" name="budget" value="low"> Low ($1000-$5000)</label><br><br>
+    <label><input type="radio" name="budget" value="moderate"> Moderate ($5000-$10,000)</label><br><br>
+    <label><input type="radio" name="budget" value="high"> High (over $10,000)</label><br><br>
+    <button onclick="nextQuestion('question3', 'question4')">Next</button>
+</div>
+
+
+<div id="question4" class="question">
+    <p class="q">4. Do you have suitable space or resources for renewable energy installations?</p> <br>
+    <label><input type="radio" name="suitableSpace" value="yes"> Yes, I have suitable space/resources</label><br><br>
+    <label><input type="radio" name="suitableSpace" value="no"> No, I don't have suitable space/resources</label><br><br>
+    <button onclick="nextQuestion('question4', 'result'); calculateGreenResource()">Submit</button>
+</div>
+
+
+<div id="result"></div>
+<button id="resetButton" onclick="resetQuiz()">Reset</button>
+</div>
+</section>
+
+<footer class="footerHome">
+    <br>
+    <p> Webmasters Team Team # 23137-1</p><br>
+    <p>Copyright &copy; 2024. Westfield High School. Herndon, VA, 20171</p> <br>
+    <p> All Images from a non-copyrighted site.</p>
+</footer>
+
+<script src="scriptHome.js"> </script>
+<script src="questionarescript.js"></script>
+ </body>
+ </html>
